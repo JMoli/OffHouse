@@ -1,0 +1,6 @@
+td.base-table, th.base-table {
+	padding:10 5 10 5;
+}
+td.big-table, th.big-table{
+	padding:10px;
+}

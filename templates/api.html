@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Adder for OMGHousing</title>
+    <link rel="stylesheet" href="/foundation.css" />
+    <script src="/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+	<form action="/api/apartments" method="post">
+	<div class="large-4 columns">
+  		<div class="row">
+	      		<div class="panel">
+				<h3 class="text-center">School</h3>
+				<label>School Id
+					<input name="id" type="text" placeholder="003327">
+				</label>
+				<label>School Name
+					<select name="school">
+						<option value="Slippery Rock University">Slippery Rock University</option>
+					</select>
+				</label>
+				<label>State
+					<select name="state">
+						<option value="PA">PA</option>
+					</select>
+				</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="panel">	
+				<h3 class="text-center">Property Info</h3>
+				<label>Property Name
+					<input name="pname" type="text">
+				</label>
+				<label>Zip Code
+					<input name="zip" type="text">
+				</label>
+				<label>Address
+					<input name="address" type="text">
+				</label>
+				<label>Phone #
+					<input name="phone" type="text">
+				</label>
+				<label>Website
+					<input name="website" type="text">
+				</label>
+				<label>Facebook
+					<input name="facebook" type="text">
+				</label>
+				<label>Office Hours
+					<input name="hours" type="text">
+				</label>
+				<label>Professional Manager
+					<input name="manager" type="text">
+				</label>
+				<label>Apartment Complex Descriptive Blurb
+					<input name="description" type="text">
+				</label>
+				<label>Rating
+					<input name="rating" type="text">
+				</label>
+				<label>Availability
+					<input name="available" type="checkbox"><label for="available">Yes</label>
+				</label>
+			</div>
+		</div>
+		<div class="row">
+
+		</div>
+	</div>
+
+	<div class="large-4 columns">
+		<div class="row">
+			<div class="panel">
+				<h3 class="text-center">Base Features</h3>
+				<label>Smoking
+					<input name="smoking" type="checkbox"><label for="smoking">Yes</label>
+				</label>
+				<label>FIOS
+					<input name="fios" type="checkbox"><label for="fios">Yes</label>
+				</label>
+				<label>Cable / Internet
+					<input name="cable" type="checkbox"><label for="cable">Yes</label>
+				</label>
+				<label>Furnished
+					<input name="furnish" type="checkbox"><label for="furnish">Yes</label>
+				</label>
+				<label>Security Guards
+					<input name="security" type="checkbox"><label for="security">Yes</label>
+				</label>
+				<label>On-Site Laundry
+					<input name="onsite" type="checkbox"><label for="onsite">Yes</label>
+				</label>
+				<label>Washer / Dryer
+					<input name="washer" type="checkbox"><label for="washer">Yes</label>
+				</label>
+				<label>Storage
+					<input name="storage" type="checkbox"><label for="storage">Yes</label>
+				</label>
+				<label>Parking
+					<input name="parking" type="checkbox"><label for="parking">Yes</label>
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="panel">
+				<h3 class="text-center">Additional Features</h3>
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+				<input class="addz" name="add" type="text">
+			</div>
+		</div>
+
+	</div>
+
+	<div class="large-4 columns">
+		<div class="row">
+			<div class="panel">
+			<h3 class="text-center">Pet Policies</h3>
+				<label>Dogs
+					<select name="dog">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="-1">Any #</option>
+					</select>
+				</label>
+				<label>Cats
+					<select name="cat">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="-1">Any #</option>
+					</select>
+				</label>
+				<label>Pet Policy Bullets
+					<input name="pet" type="text">
+					<input name="pet" type="text">
+					<input name="pet" type="text">
+					<input name="pet" type="text">
+					<input name="pet" type="text">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel">
+				<h3 class="text-center">Pricing</h3>
+				<label>Rent Low
+					<input name="rentLow" type="text">
+				</label>
+				<label>Rent High
+					<input name="rentHigh" type="text">
+				</label>
+				<label>Deposit Fee
+					<input name="deposit" type="text">
+				</label>
+				<h3 class="text-center">Pricing by Floor Plan</h3>
+				<div class="row">
+					<div class="large-2 small-2 columns">
+						<label>Beds
+							<input name="bed" type="text">
+							<input name="bed" type="text">
+							<input name="bed" type="text">
+							<input name="bed" type="text">
+						</label>
+					</div>
+					<div class="large-2 small-2 columns">
+						<label>Baths
+							<input name="bath" type="text">
+							<input name="bath" type="text">
+							<input name="bath" type="text">
+							<input name="bath" type="text">	
+						</label>
+					</div>
+					<div class="large-2 small-2 columns">
+						<label>Price
+							<input name="price" type="text">
+							<input name="price" type="text">
+							<input name="price" type="text">
+							<input name="price" type="text">
+						</label>
+					</div>
+					<div class="large-3 small-3 columns">
+						<label>Sqft Low
+							<input name="low" type="text">
+							<input name="low" type="text">
+							<input name="low" type="text">
+							<input name="low" type="text">
+						</label>
+					</div>
+					<div class="large-3 small-3 columns">
+						<label>Sqft High
+							<input name="high" type="text">
+							<input name="high" type="text">
+							<input name="high" type="text">
+							<input name="high" type="text">
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<label>Floor Plan Pictures
+						<input name="floorPic" type="text">
+						<input name="floorPic" type="text">
+						<input name="floorPic" type="text">
+						<input name="floorPic" type="text">
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<input type="submit" class="button large expand" value="Save"/>
+</form>
+
+    <script src="/vendor/jquery.js"></script>
+    <script src="/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+	<script>
+		$("form").submit(function(e){
+			e.preventDefault();
+			$.post($(this).attr("action"), $('form').serialize(), function(data){
+				console.log(data);
+			} );
+		});
+	</script>
+
+
+  </body>
+</html>
